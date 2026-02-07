@@ -15,7 +15,7 @@ export const getAIResponse = async (prompt) => {
             },
         ],
         // temperature: 0.6,
-        max_tokens: 700,   // ✅ OUTPUT LIMIT
+        // max_tokens: 700,   // ✅ OUTPUT LIMIT
     });
 
     return completion.choices[0].message.content;
