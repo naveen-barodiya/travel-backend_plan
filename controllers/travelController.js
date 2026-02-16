@@ -30,7 +30,7 @@ export const recommendTravel = async (req, res) => {
 
         // 3️⃣ Extract JSON safely
         const aiData = extractJSON(aiRaw);
-
+        console.log(aiData)
         if (
             !aiData?.destination ||
             !aiData?.food ||
