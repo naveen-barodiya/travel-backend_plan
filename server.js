@@ -11,7 +11,7 @@ const app = express();
 
 // ✅ CORS for local + production
 const allowedOrigins = [
-    "http://localhost:5173",
+
     "https://travel-frontend-plan.vercel.app",
 ];
 
@@ -35,7 +35,7 @@ app.use(express.json());
 
 // ✅ Routes
 app.use("/api/auth", authRoutes);
-
+app.use("/api/travel", (await import("./routes/travelRoutes.js")).default);
 // ✅ Server start
 const PORT = process.env.PORT || 5000;
 
