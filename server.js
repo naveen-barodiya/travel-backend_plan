@@ -34,6 +34,9 @@ app.use(
 // ✅ Middleware
 app.use(express.json());
 
+app.get("/", (req, res) => {
+    res.status(200).send("Server is running 🚀");
+});
 // ✅ Routes
 app.use("/api/auth", authRoutes);
 app.use("/api/travel", travelRoutes);
