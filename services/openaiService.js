@@ -2,7 +2,7 @@ import openai from "../config/openai.js";
 
 export const getAIResponse = async (prompt) => {
     const completion = await openai.chat.completions.create({
-        model: "gpt-5-mini",
+        model: "gpt-5.1",
         messages: [
             {
                 role: "system",

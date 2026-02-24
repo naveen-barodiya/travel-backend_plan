@@ -14,6 +14,7 @@ const app = express();
 const allowedOrigins = [
 
     "https://travel-frontend-plan.vercel.app",
+    "http://localhost:5173"
 ];
 
 app.use(
